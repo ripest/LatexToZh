@@ -191,9 +191,9 @@ IN: '\\in';
 ASSIGNMENT: '=';
 EQUAL: '==' | '\\equiv';
 LT: '<';
-LTE: '\\leq' | '\\le' | '\\leqslant';
+LTE: '\\leq' | '\\le' | '\\leqslant' | '<=';
 GT: '>';
-GTE: '\\geq' | '\\ge' | '\\geqslant';
+GTE: '\\geq' | '\\ge' | '\\geqslant' | '>=';
 UNEQUAL: '!=' | '!==' | '\\ne' | '\\neq' | '\\not\\equiv';
 AROUND: '≈' | '\\approx' | '\\thickapprox';
 

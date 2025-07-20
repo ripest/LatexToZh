@@ -43,3 +43,10 @@ def test_cases():
 
 def test_pi():
     assert convert(r'-\pi') == '负π'
+
+
+def test_lt_gt():
+    assert convert(r'\frac{3}{4} > 0') == '4分之3大于0'
+    assert convert(r'\frac{3}{4} < 0') == '4分之3小于0'
+    assert convert(r'\frac{3}{4} <= 0') == '4分之3小于等于0'
+
