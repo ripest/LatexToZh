@@ -53,6 +53,8 @@ class Visitor(LatexVisitor):
             return f'{self.visit(ctx.mp(0))}除以{self.visit(ctx.mp(1))}'
         elif ctx.COLON():
             return f'{self.visit(ctx.mp(0))}比{self.visit(ctx.mp(1))}'
+        elif ctx.CMD_CDOTS():
+            return f'{self.visit(ctx.mp(0))}余{self.visit(ctx.mp(1))}'
         else:
             return self.visitChildren(ctx)
 

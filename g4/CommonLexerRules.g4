@@ -129,6 +129,7 @@ FUNC_TRIANGLE: '\\triangle';
 //命令宏
 CMD_TIMES: '\\times';
 CMD_CDOT:  '\\cdot';
+CMD_CDOTS: '\\cdots';
 CMD_DIV:   '\\div';
 CMD_FRAC:  '\\frac';
 CMD_BINOM: '\\binom' | '\\tbinom' | '\\dbinom';

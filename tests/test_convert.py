@@ -4,6 +4,7 @@ from latex_to_zh import convert
 def test_four_basic():
     assert convert('1+2-3*5/6') == '1加2减3乘5除以6'
     assert convert('1+4=5') == '1加4等于5'
+    assert convert(r'60 \div 7 = 8 \cdots 4') == '60除以7等于8余4'
 
 def test_text():
     text = r"\text{平行四边形面积} = \text{底} \times \text{高} = 8 \, \text{厘米} \times 8 \, \text{厘米} = 64 \, \text{平方厘米} "
@@ -49,4 +50,5 @@ def test_lt_gt():
     assert convert(r'\frac{3}{4} > 0') == '4分之3大于0'
     assert convert(r'\frac{3}{4} < 0') == '4分之3小于0'
     assert convert(r'\frac{3}{4} <= 0') == '4分之3小于等于0'
+
 

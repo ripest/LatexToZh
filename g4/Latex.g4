@@ -64,7 +64,7 @@ additive:
 
 // mult part
 mp:
-    mp (MUL | CMD_TIMES | CMD_CDOT | DIV | CMD_DIV | COLON | CMD_MOD) mp
+    mp (MUL | CMD_TIMES | CMD_CDOT | CMD_CDOTS | DIV | CMD_DIV | COLON | CMD_MOD) mp
     | unary;
 
 mp_nofunc:
