@@ -79,8 +79,8 @@ class LatexVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by LatexParser#relation_list_content.
-    def visitRelation_list_content(self, ctx:LatexParser.Relation_list_contentContext):
+    # Visit a parse tree produced by LatexParser#relationListContent.
+    def visitRelationListContent(self, ctx:LatexParser.RelationListContentContext):
         return self.visitChildren(ctx)
 
 

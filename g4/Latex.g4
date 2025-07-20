@@ -49,9 +49,7 @@ relation_list:
     | ML_LEFT L_BRACKET relation_list_content MR_RIGHT R_BRACKET
     | ML_LEFT L_BRACE_VISUAL relation_list_content MR_RIGHT R_BRACE_VISUAL;
 
-relation_list_content:
-    relation COMMA relation (COMMA relation)*
-    | relation SEMICOLON relation (SEMICOLON relation)*;
+relation_list_content: relation connect=(COMMA|SEMICOLON) relation (connect=(COMMA|SEMICOLON) relation)* # relationListContent;
 
 equality:
     expr (EQUAL | ASSIGNMENT) expr;

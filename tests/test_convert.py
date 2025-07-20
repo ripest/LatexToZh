@@ -25,15 +25,19 @@ def test_times():
 
 
 def test_frac():
-    text = r'\frac{1}{2}'
-    result = convert(text)
-    assert result == '2分之1'
+    assert  convert(r'\frac{1}{2}') == '2分之1'
+    assert convert(r'-\frac{4}{5}') == '负5分之4'
 
 
 def test_supexpr():
     assert convert('y^n') == 'y的n次方'
     assert convert('y^2') == 'y的平方'
     assert convert('y^3') == 'y的立方'
+
+def test_relation_list_content():
+    assert convert(r'-1, -2, -3') == '负1,负2,负3'
+    assert convert(r'-1;-2; -3') == '负1;负2;负3'
+
 
 
 def test_cases():

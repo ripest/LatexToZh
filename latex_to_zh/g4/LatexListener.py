@@ -134,12 +134,12 @@ class LatexListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by LatexParser#relation_list_content.
-    def enterRelation_list_content(self, ctx:LatexParser.Relation_list_contentContext):
+    # Enter a parse tree produced by LatexParser#relationListContent.
+    def enterRelationListContent(self, ctx:LatexParser.RelationListContentContext):
         pass
 
-    # Exit a parse tree produced by LatexParser#relation_list_content.
-    def exitRelation_list_content(self, ctx:LatexParser.Relation_list_contentContext):
+    # Exit a parse tree produced by LatexParser#relationListContent.
+    def exitRelationListContent(self, ctx:LatexParser.RelationListContentContext):
         pass
 
 

@@ -138,6 +138,11 @@ class Visitor(LatexVisitor):
     def visitGroup(self, ctx:LatexParser.GroupContext):
         return f' {self.visit(ctx.expr())} '
 
+    def visitRelationListContent(self, ctx:LatexParser.RelationListContentContext):
+        connect_symbol = ctx.connect.text
+        ret = connect_symbol.join([self.visit(i) for i in ctx.relation()])
+        return ret
+
 
 def convert(text: str) -> str:
     """将latex转换成中文"""
