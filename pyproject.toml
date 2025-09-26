@@ -6,7 +6,7 @@ authors = [
     {name = "yingzhe.zhang",email = "zhangyingzhe@diyiedu.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.8"
 dependencies = [
     "antlr4-python3-runtime (>=4.13.2,<5.0.0)"
 ]
